@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaMoneyBill, FaPhotoVideo, FaClipboard, FaBell } from 'react-icons/fa'; // Importing icons
+import { FaMoneyBill, FaPhotoVideo, FaClipboard, FaBell, FaHome } from 'react-icons/fa'; // Importing icons
 import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
@@ -25,8 +25,17 @@ const Footer = () => {
         <span className="text-xs font-medium">Photos</span>
       </button>
 
+      {/* Home Icon in the Center */}
       <button
-        onClick={() => navigate('/results')}
+        onClick={() => navigate('/cheran-ma-nagar')}  // Navigate to CheranMaNagar page
+        className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full text-white hover:bg-blue-700 focus:outline-none"
+        title="Home"
+      >
+        <FaHome size={20} />
+      </button>
+
+      <button
+        onClick={() => navigate('/result')}
         className="flex flex-col items-center focus:outline-none hover:text-gray-800"
         title="Results"
       >

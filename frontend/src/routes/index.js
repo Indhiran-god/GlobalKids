@@ -13,6 +13,7 @@ import Notice from '../pages/notice'; // Import Notice page
 import Fees from '../pages/fees'; // Import Fees page
 import Result from '../pages/result'; // Import Result page
 import Photos from '../pages/photo'; // Import Photos page
+import Birthday from '../pages/birthday';
 
 const router = createBrowserRouter([
     {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
             {
                 path: "notice", // Notice path
                 element: <Notice /> // Notice component
+            },
+            {
+                path: "birthday", // Cheayran Ma Nagar path
+                element: <Birthday/> // Cheran Ma Nagar component
             },
             {
                 path: "fees", // Fees path
